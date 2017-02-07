@@ -9,6 +9,7 @@ $nama_file   = $_FILES['fupload']['name'];
 $kategori		= $_POST['kategori'];
 $judul_berita	= $_POST['judul_berita'];
 $tgl_agenda		= $_POST['tgl_agenda'];
+$tgl_akhir		= $_POST['tgl_akhir'];
 $isi_berita		= $_POST['isi_berita'];
 
 
@@ -23,9 +24,9 @@ if (!empty($lokasi_file))
    {
     UploadFile($nama_file);
 
-$query = mysql_query ('insert into berita (kategori,judul_berita,tgl_agenda,isi_berita,tgl_input,gambar)values("'.$kategori.'","'.$judul_berita.'","'.$tgl_agenda.'","'.$isi_berita.'","'.date('Y-m-d').'","'.$nama_file.'")');
+$query = mysql_query ('insert into berita (kategori,judul_berita,tgl_agenda,tgl_akhir,isi_berita,tgl_input,gambar)values("'.$kategori.'","'.$judul_berita.'","'.$tgl_agenda.'","'.$tgl_akhir.'","'.$isi_berita.'","'.date('Y-m-d').'","'.$nama_file.'")');
 } else {
-$query=mysql_query('insert into berita (kategori,judul_berita,tgl_agenda,isi_berita,tgl_input) values("'.$kategori.'","'.$judul_berita.'","'.$tgl_agenda.'","'.$isi_berita.'","'.date('Y-m-d').'")');
+$query=mysql_query('insert into berita (kategori,judul_berita,tgl_agenda,tgl_akhir,isi_berita,tgl_input) values("'.$kategori.'","'.$judul_berita.'","'.$tgl_agenda.'","'.$tgl_akhir.'","'.$isi_berita.'","'.date('Y-m-d').'")');
 }
 
 if($query) {

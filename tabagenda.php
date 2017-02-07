@@ -1,83 +1,72 @@
 <?php
 include('header.php');
 ?>
-<body class="senatbaru">
+<body class="cokelatsenat">
 
 <div class="container">
+<div style="padding-top:90px;">
 			
-
 
     <div id="background">
 
         <div id="page">
 
+ 
 
 
-<?php //include('ndasfoto.php'); ?>
+          <div id="content" >
 			
-        <div id="content" >
-			
-    <!--         <div class="hero-unit-table" style="background-color:red;">
- -->    
+              <div class="hero-unit-table" style="background-color:red;">
+ 
 				  <!--   image slider        -->        
 			<div>
-                <?php
+                    <?php
    						 include('menu.php');
-   					?>       
-
-						<div class="col-md-12">
-
-				<div style="padding-top:30px;">
-				  
-							<div class="col-md-9">
-				  	<div class="slider-wrapper theme-default">
-					 	<div id="slider" class="nivoSlider" class="slider-hero">
+   					?>   
+                    
+				<div class="col-md-12">
+					
+				<?php include('ndasfoto.php'); ?>
+				
+				  <div class="slider-wrapper theme-default">
+					 <div id="slider" class="nivoSlider" class="slider-hero">
 			
                             <img src="admin/images/ndass3.jpg" data-thumb="images/toystory.jpg" alt="" />
                             <img src="admin/images/ndass2.jpg" data-thumb="images/toystory.jpg" alt="" />
                             <img src="admin/images/ndass1.jpg" data-thumb="images/wineries.jpg" alt="" />
                             <img src="admin/images/ndass2.jpg"  alt="" data-transition="slideInLeft" />
-						</div>   
-					</div>	
-							</div> <!-- end of col-md-9 -->
+					</div>   
 					
-							<div class="col-md-3" style="background-color: silver">
-
-				<div style="padding-right: 10px;">
-							<?php include("loginorma.php");?>
-							
-							</div>
-				</div>	
-						</div> <!--end of col-md-12-->
-
+					
+					</div>
+                    </div>
 			</div>        
 				
                     <!-- end slider -->
 		
-		<div class="panel panel-default">			
+<div class="panel panel-default">			
 	<!-- Bagian KIRI-->				
 	<div class="container">
-
   <div class="col-md-3">
-   <div style="height: 490px;"> <?php include('kalender.php');?> </div>
-   </div>
+  
+  <?php include('terbanyak.php');?>
+  </div>
   <!-- Bagian TENGAH-->		
-  <div class="col-md-7">
-  <?php include('berita.php');?>
+  <div class="col-md-8">
+  
+<!-- coba -->
 
 
-
-  </div>
-
-  <!-- Bagian KANAN-->		
-  <div class="col-md-2">
-  <?php include('agenda.php');?>
-
-  </div>
-
+<?php include('agenda.php'); ?>
+	
 	</div>
-
-		</div>
+  
+  
+  
+  
+  </div>
+	</div>
+</div>
 			
 			
 			
@@ -91,12 +80,13 @@ include('header.php');
                     </div>
                 </div>
             </div>
+            </div>
 			
                     <div id="footer">
         </div>
     </div>
 <?php include('footer_bottom.php') ?>
 </div>
-
+</div>
 </body>
 </html>

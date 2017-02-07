@@ -10,6 +10,15 @@
         <link rel="stylesheet" type="text/css" href="css/DT_bootstrap.css">
         <link rel="stylesheet" href="css/style.css" type="text/css">
 		<link href="jquery-ui.css" rel="stylesheet">
+
+<!-- link kalender -->
+<link href="fullcalender/lib/cupertino/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="fullcalender/fullcalendar.css" rel="stylesheet" type="text/css" />
+<link href="fullcalender/fullcalendar.print.css" rel="stylesheet" type="text/css" media="print" />
+<script src="fullcalender/lib/moment.min.js" type="text/javascript"></script>
+<script src="fullcalender/lib/jquery.min.js" type="text/javascript"></script>
+<script src="fullcalender/lib/jquery-ui.custom.min.js" type="text/javascript"></script>
+<!-- end link kalender -->
 		
 		<style>
 		

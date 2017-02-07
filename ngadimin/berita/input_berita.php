@@ -5,8 +5,14 @@
 <script>
     $(document).ready(function(){
         $('#tanggal').Zebra_DatePicker({
-            format: 'd-F-Y',
-            months : ['Jan','Feb','Mar','Apr','Mei','Juni','Juli','Ags','Sep','Okt','Nov','Des'],
+            format: 'Y-F-d',
+            months : ['01','02','03','04','05','06','07','08','09','10','11','12'],
+            days : ['Minggu','Senin','Selasa','Rabu','Kamis','Jum\'at','Sabtu'],
+            days_abbr : ['Minggu','Senin','Selasa','Rabu','Kamis','Jum\'at','Sabtu']
+        });
+            $('#tanggala').Zebra_DatePicker({
+            format: 'Y-F-d',
+            months : ['01','02','03','04','05','06','07','08','09','10','11','12'],
             days : ['Minggu','Senin','Selasa','Rabu','Kamis','Jum\'at','Sabtu'],
             days_abbr : ['Minggu','Senin','Selasa','Rabu','Kamis','Jum\'at','Sabtu']
         });
@@ -145,6 +151,14 @@ $kueri_kategori=mysql_query($sql_kategori) or die(mysql_error());
 			<td> : </td><td>
 			<input type="text" name="tgl_agenda" id="tanggal"/>[Khusus Kategori Agenda]</td>
           </tr>
+          <tr>
+            <td><small><strong>Tanggal Akhir</strong></small></td>
+      <td> : </td><td>
+      <input type="text" name="tgl_akhir" id="tanggala"/>[Khusus Kategori Agenda]</td>
+          </tr>
+
+
+
           <tr>
             <td><small><strong>isi artikel </strong></small></td>
             <td>:</td>

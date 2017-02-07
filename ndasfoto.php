@@ -1,5 +1,8 @@
-				<body>
-
+<!--		
+				<body style="background-color: white;" >  -->
+				  <div id="background" style="background-color: white;">
+<div id="page" > 
+<border style="column-rule-width: 100px; background-color: red;">
 				<div class="bk-color-blue">
 					
                     <div class="slider-wrapper theme-default">
@@ -24,5 +27,8 @@
 					
 					</div>
 				</div>
-
+				</div>
+</div>
 			</body>
+
+		</border>
