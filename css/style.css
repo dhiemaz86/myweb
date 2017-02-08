@@ -1611,6 +1611,11 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+.raw {
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
 .row {
   margin-right: -15px;
   margin-left: -15px;
@@ -5479,10 +5484,13 @@ button.list-group-item-danger.active:focus {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
           box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
+.punel {
+  background-color: #fff;
+        }
 
 .panel {
   margin-bottom: 20px;
-  background-color: #fff;
+  background-color: #eeeeee;
   border: 1px solid transparent;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
@@ -7102,7 +7110,7 @@ coeg {
 
 
 #content {
-	background: #fff;
+	background: #eeeeee;
 	float: left;
 	margin: 0;
 	padding: 0;
@@ -7327,8 +7335,8 @@ coeg {
 }
 #footer {
 
-  
-         background: #b84e64;
+  height: 100px;
+  background: #50285d;
 	
 }
 
@@ -7923,18 +7931,14 @@ width:33.33333333333333%
 
 .judul-agenda{
 	font-weight: bold;
-	background-color: #382E1c;
-	padding: 10px;
+	background-color: #50285d;
+  height: 38px;
 	width: 170px;
-	margin-top : 0px;
-	margin-bottom: 20px;
-	color: #fff;
-	border-bottom: 3px solid #343434;
 }
 
 .section-title{
 	font-weight: bold;
-	background-color: #382E1c;
+	background-color: #50285d;
 	padding: 10px;
 	margin-top : 0px;
 	margin-bottom: 20px;

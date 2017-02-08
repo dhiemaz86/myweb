@@ -55,29 +55,70 @@ include('header.php');
                     <!-- end slider -->
 		
 		<div class="panel panel-default">			
-	<!-- Bagian KIRI-->				
+				
 	<div class="container">
-
+	<div class="col-md-12">
+  <!-- Bagian KIRI-->	
   <div class="col-md-3">
-   <div style="height: 490px;"> <?php include('kalender.php');?> </div>
+   <div style="height: 630px; background-color: #ffffff;">
+
+<div>
+    <?php include('kalender.php');?>
+ </div>
+	</div>
    </div>
   <!-- Bagian TENGAH-->		
-  <div class="col-md-7">
-  <?php include('berita.php');?>
-
+  <div class="col-md-7" >
+  <div><?php include('berita.php');?>
+  </div>
 
 
   </div>
 
   <!-- Bagian KANAN-->		
-  <div class="col-md-2">
+  <div class="col-md-2" style="width: 100px;">
+  <div>
   <?php include('agenda.php');?>
-
   </div>
+  </div>
+  	</div> <!-- end of col-md-12 -->
 
-	</div>
 
-		</div>
+<br>
+<div style="background-color: red;">
+  	<div class="col-md-12" style="padding-top: 30px;">  		
+  	</div>
+
+  	<div class="col-md-3">
+  		<?php include('agenda.php');?>
+  	</div>
+  	
+  	<div class="col-md-3">
+  		<?php include('agenda.php');?>
+  	</div>
+  	
+  	<div class="col-md-3">
+  		<?php include('agenda.php');?>
+  	</div>  	
+
+  	<div class="col-md-3">
+  		<?php include('agenda.php');?>
+  	</div>
+  	</div> <!-- end of col-md-12 -->
+</div>
+
+	</div> <!-- end of container -->
+  	
+
+     <div id="footer" style="background-color: #50285d;">
+     <center>Copyright@Senat Mahasiswa 2017 </center>  
+     </div>
+
+
+		</div> <!-- end of panel -->
+
+	
+
 			
 			
 			
@@ -92,11 +133,6 @@ include('header.php');
                 </div>
             </div>
 			
-                    <div id="footer">
-        </div>
-    </div>
-<?php include('footer_bottom.php') ?>
-</div>
 
 </body>
 </html>

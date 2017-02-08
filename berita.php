@@ -22,9 +22,9 @@ $query=mysql_query("select * from berita
 order by id_berita desc  limit $posisi,$batas");
 while($r=mysql_fetch_array($query))
 {
-  echo"<div class='panel panel-default'>
+  echo"<div class='punel panel-default' style='border=10px'>
             <div class='panel-body'>
-                <div class='row'>
+                <div class='raw'>
 					<div class='col-md-12'>
 						<div class='berita'>
                                <div class='col-md-7'>

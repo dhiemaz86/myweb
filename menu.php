@@ -11,7 +11,7 @@
         <a class="navbar-brand" href="#">Senat</a>
       </div>
 -->
-<div style="background-color: #000000;">
+<div style="background-color: #50285d;">
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
        <div class="col-md-8">
         <ul class="nav navbar-nav">

@@ -1,19 +1,19 @@
-<?php
-echo'
-    <div class="col-md-12 left">';
-echo '<div class="judul-agenda">
-<div class="nvhead">
-            Agenda</div>
-        </div>
-<table  rules="rows" border="0">
+<?php 
+echo'<div  style="width: 250px">';
+   
+
+echo '<div class="judul-agenda"  style="width: 223px;">
+<div class="nvhead">Agenda</div>
+      </div>
+
+<table  rules="rows" border="0" style="background-color: #fff; width: 222px;">
 <tr>
-<th><div id="gbl"> Waktu </div></th>
+<th> <div id="gbl"> Waktu </div> </th>
 <th>Acara</th>
 </tr>
-<br>
 <tr>';
  
- include "koneksi.php";  
+
    
 $batas=10;
 
@@ -35,6 +35,7 @@ echo "
  <td style= height:30px;><a href=readmore.php?id=$r[id_berita]>".$r['judul_berita']." <br></a><br> </td>
  </tr>";
  }
-echo '</table></div>';
+echo '</table>;
+</div> ';
 
 ?>

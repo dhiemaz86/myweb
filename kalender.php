@@ -1,10 +1,13 @@
 
 <script src="fullcalender/fullcalendar.min.js" type="text/javascript"></script>
 
+
       <div class="col-md-12 section-title">
-		   	<div class="pull-left"><a class="i-text">
+		   	<div  style="width: 305px;"><a class="i-text">
             Kalender</a></span></div>
         </div>
+<div  style="background-color: #fff">
+
 <?php
 function tanggal_sekarang($time=FALSE)
 {
@@ -52,3 +55,4 @@ function tanggal_sekarang($time=FALSE)
 </style>
 <div id='loading'>loading...</div>
 <div id='calendar'></div>
+</div>
