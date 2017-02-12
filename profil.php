@@ -1,46 +1,53 @@
 <?php
 include('header.php');
 ?>
-<body class="cokelatsenat">
+<body class="senatbaru">
 
 <div class="container">
-<div style="padding-top:0px;">
 			
 
-    <?php
-    include('menu.php');
-    ?>
 
     <div id="background">
 
         <div id="page">
 
-          
 
-          <div id="content" >
+
+<?php //include('ndasfoto.php'); ?>
 			
-              <div class="hero-unit-table" style="background-color:red;">
- 
-				  <!--   image slider        -->        
-			<div>
-                    
-				<div class="col-md-12">
-					
-				<?php include('ndasfoto.php'); ?>
-				
-				  <div class="slider-wrapper theme-default">
-					 <div id="slider" class="nivoSlider" class="slider-hero">
+        <div id="content" >
+			
+             <div>
+                <?php
+   						 include('menu.php');
+   					?>       
+
+						<div class="col-md-12">
+
+				<div style="padding-top:30px;">
+				  
+							<div class="col-md-9">
+				  	<div class="slider-wrapper theme-default">
+					 	<div id="slider" class="nivoSlider" class="slider-hero">
 			
                             <img src="admin/images/ndass3.jpg" data-thumb="images/toystory.jpg" alt="" />
                             <img src="admin/images/ndass2.jpg" data-thumb="images/toystory.jpg" alt="" />
                             <img src="admin/images/ndass1.jpg" data-thumb="images/wineries.jpg" alt="" />
                             <img src="admin/images/ndass2.jpg"  alt="" data-transition="slideInLeft" />
-					</div>   
+						</div>   
+					</div>	
+							</div> <!-- end of col-md-9 -->
 					
-					
-					</div>
-                    </div>
-			</div>        
+							<div class="col-md-3" style="background-color: silver">
+
+				<div style="padding-right: 10px;">
+							<?php include("loginorma.php");?>
+							
+							</div>
+				</div>	
+						</div> <!--end of col-md-12-->
+
+			</div>  
 				
                     <!-- end slider -->
 		
@@ -76,16 +83,48 @@ Fungsi utama dari SEMA sendiri adalah Controling, Legalitas, dan Bageting. Yang 
 Selain itu, SEMA juga mempunyai fungsi sebagai penampung aspirasi seluruh mahasiswa STMIK Amikom Yogyakarta yang mana semua aspirasi yang masuk akan dipilah dan di musyawarahkan untuk diajukan ke pihak Lembaga
 		
 		
-		
-	</div>
-	</div>
-  
-  
-  
-  
-  </div>
-	</div>
 </div>
+  </div> <!-- end of col-md-12 -->
+
+
+<br>
+
+	  	<div class="col-md-12 " style="padding-top: 30px; padding-right: 50px;">  		
+  	<div class="col-md-3" style="background-color: white;">
+  		<?php include('agenda.php');?>
+  	</div>
+  	
+  	<div class="col-md-3" style="background-color: white;">
+  		<?php include('agenda.php');?>
+  	</div>
+  	
+  	<div class="col-md-3" style="background-color: white;">
+  		<?php include('agenda.php');?>
+  	</div>  	
+
+  	<div class="col-md-3" style="background-color: white; ">
+  		<?php include('agenda.php');?>
+  	</div>
+
+  		</div>
+
+  	</div> <!-- end of col-md-12 -->
+  
+  
+			
+			
+			
+			
+            
+			 <div id="footer" style="background-color: #50285d;">
+     <center>Copyright@Senat Mahasiswa 2017 </center>  
+     </div>
+
+
+		</div> <!-- end of panel -->
+
+	
+
 			
 			
 			
@@ -99,13 +138,7 @@ Selain itu, SEMA juga mempunyai fungsi sebagai penampung aspirasi seluruh mahasi
                     </div>
                 </div>
             </div>
-            </div>
 			
-                    <div id="footer">
-        </div>
-    </div>
-<?php include('footer_bottom.php') ?>
-</div>
-</div>
+
 </body>
 </html>

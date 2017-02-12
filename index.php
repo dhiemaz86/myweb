@@ -77,7 +77,8 @@ include('header.php');
 
   <!-- Bagian KANAN-->		
   <div class="col-md-2" style="width: 100px;">
-  <div>
+  
+   <div style="height: 630px; width: 222px; background-color: #ffffff;">
   <?php include('agenda.php');?>
   </div>
   </div>
@@ -85,27 +86,27 @@ include('header.php');
 
 
 <br>
-<div style="background-color: red;">
-  	<div class="col-md-12" style="padding-top: 30px;">  		
-  	</div>
 
-  	<div class="col-md-3">
+	  	<div class="col-md-12 " style="padding-top: 30px; padding-right: 50px;">  		
+  	<div class="col-md-3" style="background-color: white;">
   		<?php include('agenda.php');?>
   	</div>
   	
-  	<div class="col-md-3">
+  	<div class="col-md-3" style="background-color: white;">
   		<?php include('agenda.php');?>
   	</div>
   	
-  	<div class="col-md-3">
+  	<div class="col-md-3" style="background-color: white;">
   		<?php include('agenda.php');?>
   	</div>  	
 
-  	<div class="col-md-3">
+  	<div class="col-md-3" style="background-color: white; ">
   		<?php include('agenda.php');?>
   	</div>
+
+  		</div>
+
   	</div> <!-- end of col-md-12 -->
-</div>
 
 	</div> <!-- end of container -->
   	

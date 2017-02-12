@@ -8887,3 +8887,47 @@ body, html {
 .forgot-password:active,
 .forgot-password:focus{
     color: rgb(12, 97, 33);
+
+}
+
+/*===================== menu orma kiri =========================
+ /* Suckittrees.com Flyout CSS menu */ 
+#menu_ver {
+    font-weight: 600;
+    width: 250px; }
+#menu_ver ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+}
+#menu_ver ul li.hover,
+#menu_ver ul li:hover { position: relative; z-index: 599; }
+#menu_ver ul ul{
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 598;
+}
+#menu_ver ul li:hover > ul { visibility: visible; }
+#menu_ver ul ul {
+    top: 1; 
+    left: 100%;
+    border: 10px; }
+#menu_ver span, #menu_ver a {
+    display: inline-table;
+    border-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-decoration: none; }
+#menu_ver li { background: none; border: 10px;}
+#menu_ver li:hover, #menu_ver li.active { background: #c1c1c1; }
+#menu_ver a {
+    color: #383838;
+    line-height: 160%;
+    padding: 16px 8px 16px 28px;
+    width: 164px; }
+#menu_ver ul ul li {
+    background: #006C6C;
+    border-bottom: 1px solid #007171; }
+#menu_ver ul ul li:hover { background: #5FD367; }
