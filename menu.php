@@ -32,7 +32,5 @@
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
               </div>
-      </div>
-  
+      </div>   
 </div>
-  <script src="js/bootstrap.min.js"></script>
