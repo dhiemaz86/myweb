@@ -2,7 +2,7 @@
 $servername = "localhost";
 $user		= "root";
 $pasword	= "";
-$db			= "bambukuning2";
+$db			= "sema";
 
 $koneksi = mysql_connect ($servername,$user, $pasword)
 			or die ('gagal terkoneksi'.mysql_error());
