@@ -4,8 +4,8 @@
 
         <title>Senat Mahasiswa</title>
        
-        <link href="admin/css/bootstrap.css" rel="stylesheet" type="text/css" media="screen">
-        <link href="admin/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css" media="screen">
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="screen">
         <link rel="stylesheet" type="text/css" href="css/DT_bootstrap.css">
         <link rel="stylesheet" href="css/style.css" type="text/css">
@@ -35,19 +35,19 @@
 		
 		
     </head>
-    <script src="admin/js/jquery.js" type="text/javascript"></script>
-    <script src="admin/js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
 
 
 	<link rel="shortcut icon" href="data/logo/favicon.ico" />
 	
-    <link rel="stylesheet" href="admin/themes/default/default.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="admin/themes/light/light.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="admin/themes/dark/dark.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="admin/themes/bar/bar.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="admin/css/nivo-slider.css" type="text/css" media="screen" /> 
+    <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="themes/light/light.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="themes/dark/dark.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="themes/bar/bar.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" /> 
 
-    <script type="text/javascript" src="admin/js/jquery.nivo.slider.js"></script>
+    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
     <script type="text/javascript">
         jQuery(document).ready(function() {
             $(window).load(function() {

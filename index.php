@@ -33,10 +33,8 @@ include('header.php');
 				  	<div class="slider-wrapper theme-default">
 					 	<div id="slider" class="nivoSlider" class="slider-hero">
 			
-                            <img src="admin/images/ndass3.jpg" data-thumb="images/toystory.jpg" alt="" />
-                            <img src="admin/images/ndass2.jpg" data-thumb="images/toystory.jpg" alt="" />
-                            <img src="admin/images/ndass1.jpg" data-thumb="images/wineries.jpg" alt="" />
-                            <img src="admin/images/ndass2.jpg"  alt="" data-transition="slideInLeft" />
+                            
+                          <?php include("slider.php"); ?>
 						</div>   
 					</div>	
 							</div> <!-- end of col-md-9 -->
