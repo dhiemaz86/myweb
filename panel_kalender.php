@@ -37,7 +37,7 @@ function tanggal_sekarang($time=FALSE)
 			editable: true,
 			eventLimit: true,
 			events: {
-				url: 'data.php',				
+				url: 'koneksi_kalender.php',				
 			},
 			loading: function(bool) {
 				$('#loading').toggle(bool);

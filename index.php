@@ -22,7 +22,7 @@ include('header.php');
 				  <!--   image slider        -->        
 			<div>
                 <?php
-   						 include('menu.php');
+   						 include('panel_menu.php');
    					?>       
 
 						<div class="col-md-12">
@@ -34,7 +34,7 @@ include('header.php');
 					 	<div id="slider" class="nivoSlider" class="slider-hero">
 			
                             
-                          <?php include("slider.php"); ?>
+                          <?php include("panel_slider.php"); ?>
 						</div>   
 					</div>	
 							</div> <!-- end of col-md-9 -->
@@ -42,7 +42,7 @@ include('header.php');
 							<div class="col-md-3" style="background-color: silver">
 
 				<div style="padding-right: 10px;">
-							<?php include("loginorma.php");?>
+							<?php include("panel_loginorma.php");?>
 							
 							</div>
 				</div>	
@@ -61,13 +61,13 @@ include('header.php');
    <div style="height: 630px; background-color: #ffffff;">
 
 <div>
-    <?php include('kalender.php');?>
+    <?php include('panel_kalender.php');?>
  </div>
 	</div>
    </div>
   <!-- Bagian TENGAH-->		
   <div class="col-md-7" >
-  <div><?php include('berita.php');?>
+  <div><?php include('panel_berita.php');?>
   </div>
 
 
@@ -77,7 +77,7 @@ include('header.php');
   <div class="col-md-2" style="width: 100px;">
   
    <div style="height: 630px; width: 222px; background-color: #ffffff;">
-  <?php include('agenda.php');?>
+  <?php include('panel_agenda.php');?>
   </div>
   </div>
   	</div> <!-- end of col-md-12 -->
@@ -87,19 +87,19 @@ include('header.php');
 
 	  	<div class="col-md-12 " style="padding-top: 30px; padding-right: 50px;">  		
   	<div class="col-md-3" style="background-color: white;">
-  		<?php include('agenda.php');?>
+  		<?php include('panel_agenda.php');?>
   	</div>
   	
   	<div class="col-md-3" style="background-color: white;">
-  		<?php include('agenda.php');?>
+  		<?php include('panel_agenda.php');?>
   	</div>
   	
   	<div class="col-md-3" style="background-color: white;">
-  		<?php include('agenda.php');?>
+  		<?php include('panel_agenda.php');?>
   	</div>  	
 
   	<div class="col-md-3" style="background-color: white; ">
-  		<?php include('agenda.php');?>
+  		<?php include('agendaaa.php');?>
   	</div>
 
   		</div>

@@ -48,7 +48,8 @@ include('header.php');
 				</div>	
 						</div> <!--end of col-md-12-->
 
-			</div>        
+			</div>         
+				
                     <!-- end slider -->
 		
 <div class="panel panel-default">			
@@ -59,9 +60,11 @@ include('header.php');
   <?php include('panel_terbanyak.php');?>
   </div>
   <!-- Bagian TENGAH-->		
-  <div class="col-md-8" style="padding-left: 20px;">
-  	<?php include('isi_readmore.php'); ?>
-	</div>
+  <div class="col-md-7">
+  <?php include('proses_cari.php');?></div>
+  <!-- Bagian KANAN-->		
+  <div class="col-md-2">
+  <?php include('agenda.php');?></div>
 	</div>
 </div>
 			

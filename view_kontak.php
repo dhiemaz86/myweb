@@ -33,10 +33,8 @@ include('header.php');
 				  	<div class="slider-wrapper theme-default">
 					 	<div id="slider" class="nivoSlider" class="slider-hero">
 			
-                            <img src="admin/images/ndass3.jpg" data-thumb="images/toystory.jpg" alt="" />
-                            <img src="admin/images/ndass2.jpg" data-thumb="images/toystory.jpg" alt="" />
-                            <img src="admin/images/ndass1.jpg" data-thumb="images/wineries.jpg" alt="" />
-                            <img src="admin/images/ndass2.jpg"  alt="" data-transition="slideInLeft" />
+                            
+                          <?php include("slider.php"); ?>
 						</div>   
 					</div>	
 							</div> <!-- end of col-md-9 -->
@@ -67,31 +65,25 @@ include('header.php');
 <!-- coba -->
 
 
-<div class="section-title"><center>PENGURUS SENAT MAHASISWA 2015/2016</center></div>
+<div class="section-title"><center>Kontak Pengurus</center></div>
 
-<div class="entry-content">
-						<p style="text-align: center;"><strong></strong></p>
+					</header><!-- .entry-header -->
+
+					<div class="entry-content">
+						
 <table style="height: 1024px;" width="603">
 <tbody>
 <tr>
-<center>
-<th>Nama</th>
-<th> </th>
-<th>Nim</th>
-<th>Jabatan</th>
-</center>
-</tr>
-<tr>
 <td width="202"><strong>Galih Anggriawan</strong></td>
 <td width="32"><strong>:</strong></td>
-<td width="132"><strong>13.11.7294</strong></td>
-<td width="161"><strong>KETUA UMUM</strong></td>
+<td width="132"><strong>KETUA UMUM</strong></td>
+<td width="161"><strong>085717448718</strong></td>
 </tr>
 <tr>
 <td width="202"><strong>Lasarus Bangun</strong></td>
 <td width="32"><strong>:</strong></td>
-<td width="132"><strong>13.11.7279</strong></td>
-<td width="161"><strong>SEKRETARIS UMUM</strong></td>
+<td width="132"><strong>SEKRETARIS UMUM</strong></td>
+<td width="161"><strong>081328798213</strong></td>
 </tr>
 <tr>
 <td width="399"><strong>KOMISI SEKRETARIS</strong></td>
@@ -100,20 +92,20 @@ include('header.php');
 <tr>
 <td width="202"><strong>Indah Setiana Dewi</strong></td>
 <td width="32"><strong>:</strong></td>
-<td width="132"><strong>13.11.7510</strong></td>
-<td width="161"><strong>SEKRETARIS I</strong></td>
+<td width="132"><strong>SEKRETARIS I</strong></td>
+<td width="161"><strong>081275792215</strong></td>
 </tr>
 <tr>
 <td width="202">Dekap</td>
 <td width="32">:</td>
-<td width="132">13.11.6988</td>
-<td width="161">SEKRETARIS II</td>
+<td width="132">SEKRETARIS II</td>
+<td width="161">08979112703</td>
 </tr>
 <tr>
 <td width="202">Liza Kamaliyah</td>
 <td width="32">:</td>
-<td width="132">13.11.7176</td>
-<td width="161">SEKRETARIS III</td>
+<td width="132">SEKRETARIS III</td>
+<td width="161">087715125205</td>
 </tr>
 <tr>
 <td width="202"></td>
@@ -124,8 +116,8 @@ include('header.php');
 <tr>
 <td width="202">Dewi Agustina</td>
 <td width="32">:</td>
-<td width="132">14.02.6428</td>
-<td width="161">SEKRETARIS IV</td>
+<td width="132">SEKRETARIS IV</td>
+<td width="161">08998930495</td>
 </tr>
 <tr>
 <td width="399"><strong>KOMISI BENDAHARA</strong></td>
@@ -134,26 +126,26 @@ include('header.php');
 <tr>
 <td width="202"><strong>Eby Fauziana</strong></td>
 <td width="32"><strong>:</strong></td>
-<td width="132"><strong>13.11.7017</strong></td>
-<td width="161"><strong>BENDAHARA I</strong></td>
+<td width="132"><strong>BENDAHARA I</strong></td>
+<td width="161"><strong>081542786287</strong></td>
 </tr>
 <tr>
 <td width="202">Hibahtul Khasanah</td>
 <td width="32">:</td>
-<td width="132">13.11.7141</td>
-<td width="161">BENDAHARA II</td>
+<td width="132">BENDAHARA II</td>
+<td width="161">085664574688</td>
 </tr>
 <tr>
 <td width="202">Devi Sri Susanti</td>
 <td width="32">:</td>
-<td width="132">14.01.7218</td>
-<td width="161">BENDAHARA III</td>
+<td width="132">BENDAHARA III</td>
+<td width="161">08563214256</td>
 </tr>
 <tr>
 <td width="202">Bela</td>
 <td width="32">:</td>
-<td width="132">14.11.7366</td>
-<td width="161">BENDAHARA IV</td>
+<td width="132">BENDAHARA IV</td>
+<td width="161">083843113629</td>
 </tr>
 
 <tr>
@@ -168,26 +160,26 @@ include('header.php');
 <tr>
 <td width="202"><strong>Agung Wijayanto</strong></td>
 <td width="32"><strong>:</strong></td>
-<td width="132"><strong>14.11.6956</strong></td>
-<td width="161"><strong>KOORDINATOR</strong></td>
+<td width="132"><strong>KOORDINATOR</strong></td>
+<td width="161"><strong>085254792255</strong></td>
 </tr>
 <tr>
 <td width="202">Damarta Putra</td>
 <td width="32">:</td>
-<td width="132">14.11.7287</td>
-<td width="161">Anggota</td>
+<td width="132">Anggota</td>
+<td width="161">081328798213</td>
 </tr>
 <tr>
 <td width="202">Nanda Putra Pratama</td>
 <td width="32">:</td>
-<td width="132">14.11.7582</td>
-<td width="161">Anggota</td>
+<td width="132">Anggota</td>
+<td width="161"></td>
 </tr>
 <tr>
 <td width="202">Hendra Wardana</td>
 <td width="32">:</td>
-<td width="132">14.11.3211</td>
-<td width="161">Anggota</td>
+<td width="132">Anggota</td>
+<td width="161"></td>
 </tr>
 
 <tr>
@@ -197,31 +189,31 @@ include('header.php');
 <tr>
 <td width="202" ><strong>Widya Alimi</strong></td>
 <td width="32"><strong>:</strong></td>
-<td width="132"><strong>14.11.6961</strong></td>
-<td width="161"><strong>KOORDINATOR</strong></td>
+<td width="132"><strong>KOORDINATOR</strong></td>
+<td width="161"><strong></strong></td>
 </tr>
 <tr>
 <td width="202">Arif Rahman</td>
 <td width="32">:</td>
-<td width="132">14.11.7233</td>
-<td width="161">Anggota</td>
+<td width="132">Anggota</td>
+<td width="161"></td>
 </tr>
 <tr>
 <td width="202">Adji PURBOJATI</td>
 <td width="32">:</td>
-<td width="132">14.11.5977</td>
+<td width="132">Anggota</td>
 <td width="161">Anggota</td>
 </tr>
 <tr>
 <td width="202">Firman Galih Pratama</td>
 <td width="32">:</td>
-<td width="132">14.11.6968</td>
+<td width="132">Anggota</td>
 <td width="161">Anggota</td>
 </tr>
 <tr>
 <td width="202">Luthfi Apriliasni</td>
 <td width="32">:</td>
-<td width="132">14.11.8160</td>
+<td width="132">Anggota</td>
 <td width="161">Anggota</td>
 </tr>
 
@@ -232,32 +224,32 @@ include('header.php');
 <tr>
 <td width="202"><strong>Anjar Wilujeng</strong></td>
 <td width="32"><strong>:</strong></td>
-<td width="132"><strong>14.11.8152</strong></td>
-<td width="161"><strong>KOORDINATOR</strong></td>
+<td width="132"><strong>KOORDINATOR</strong></td>
+<td width="161"><strong></strong></td>
 </tr>
 <tr>
 <td width="202">Dimas Dwi Nugroho</td>
 <td width="32">:</td>
-<td width="132">14.11.7857</td>
-<td width="161">Anggota</td>
+<td width="132">Anggota</td>
+<td width="161">089606827806</td>
 </tr>
 <tr>
 <td width="202">Eka Arisman</td>
 <td width="32">:</td>
-<td width="132">14.11.8065</td>
-<td width="161">Anggota</td>
+<td width="132">Anggota</td>
+<td width="161"></td>
 </tr>
 <tr>
 <td width="202">Rina Purwanti</td>
 <td width="32">:</td>
-<td width="132">14.11.8458</td>
-<td width="161">Anggota</td>
+<td width="132">Anggota</td>
+<td width="161"></td>
 </tr>
 <tr>
 <td width="202">Fadhila</td>
 <td width="32">:</td>
-<td width="132">14.11.7739</td>
-<td width="161">Anggota</td>
+<td width="132">Anggota</td>
+<td width="161"></td>
 </tr>
 <tr>
 <td width="202"></td>
@@ -270,6 +262,7 @@ include('header.php');
 	
 		</div>
 	</div>
+  
   
   
   

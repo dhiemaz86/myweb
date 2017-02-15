@@ -1,6 +1,6 @@
 <?php
-require_once("mysqlminang.php");
-$p=new Mysqlminang("bambukuning2","localhost","root","");
+require_once("proses_kalender.php");
+$p=new Mysqlminang("sema","localhost","root","");
 $sql="select * from kategori,berita 
 where berita.kategori=2=kategori.id_kategori order by id_berita";
 $data=array();

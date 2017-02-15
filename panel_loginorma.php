@@ -1,20 +1,14 @@
-<!--    <?php
-    /* handle error */
-    if (isset($_GET['error'])) : ?>
-        <div class="alert alert-warning alert-dismissible" role="alert">
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <strong>Warning!</strong> <?=base64_decode($_GET['error']);?>
-        </div>
-    <?php endif;?>
- 
-        <div class="outter-form-login">
-        <div class="logo-login">
-            <em class="glyphicon glyphicon-user"></em>
-        </div>
+<?php
+ob_start();
+if(isset($_SESSION['usernameku']))
+    {
+        $user = $_SESSION['usernameku'];
+        echo "$user";
+?>
 
--->
+<?php
+}else{
+echo'
                 <div style="padding-top:10px;">
            <form method="post" action="proses_login_orma.php" class="form-signin" style="height: 230px; border: 10px;">
 
@@ -34,4 +28,6 @@
     </div>
  
     <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>';
+}
+?>

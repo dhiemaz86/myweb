@@ -48,7 +48,8 @@ include('header.php');
 				</div>	
 						</div> <!--end of col-md-12-->
 
-			</div>        
+			</div>         
+				
                     <!-- end slider -->
 		
 <div class="panel panel-default">			
@@ -56,12 +57,22 @@ include('header.php');
 	<div class="container">
   <div class="col-md-3">
   
-  <?php include('panel_terbanyak.php');?>
+  <?php include('terbanyak.php');?>
   </div>
   <!-- Bagian TENGAH-->		
-  <div class="col-md-8" style="padding-left: 20px;">
-  	<?php include('isi_readmore.php'); ?>
+  <div class="col-md-8">
+  
+<!-- coba -->
+
+
+<?php include('agendaaa.php'); ?>
+	
 	</div>
+  
+  
+  
+  
+  </div>
 	</div>
 </div>
 			
@@ -76,6 +87,7 @@ include('header.php');
 			
                     </div>
                 </div>
+            </div>
             </div>
 			
                     <div id="footer">
