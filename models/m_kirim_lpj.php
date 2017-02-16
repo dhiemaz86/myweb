@@ -20,8 +20,8 @@ class kirim_lpj{
 	}
 
 	public function createKirim_lpj($id_lpj, $orma, $no_surat, $judul, $lpj, $deskripsi){
-		$query = "Insert into kirim_lpj (id_lpj, orma, no_surat, judul, lpj, deskripsi)
-			values('$id_lpj', '$orma', '$no_surat', '$judul', '$lpj', '$deskripsi')";
+		$query = "Insert into kirim_lpj (id_lpj, orma, no_surat, judul, lpj, deskripsi, tgl_input)
+			values('$id_lpj', '$orma', '$no_surat', '$judul', '$lpj', '$deskripsi', 'date('Y-m-d')')";
 		$this->db->putRows($query);	
 	}
 	public function updateKirim_lpj($id, $data){
@@ -32,7 +32,7 @@ class kirim_lpj{
 		$deskripsi=$data['input_deskripsi'];
 		
 
-		$query = "update kirim_lpj set orma='$orma', no_surat='$no_surat', judul='$judul', lpj=$lpj, deskripsi=$deskripsi";
+		$query = "update kirim_lpj set orma='$orma', no_surat='$no_surat', judul='$judul', lpj=$lpj, deskripsi=$deskripsi, tgl_input=date('Y-m-d')";
 		$query.= " where id_lpj='$id'";
 		$this->db->putRows($query);		
 	}

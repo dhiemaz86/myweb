@@ -1,42 +1,46 @@
 <?php
-
 require_once('lib/DBClass.php');
 
-class r_inap{
+class administrasi{
 
 	private $db;
 
-	public function r_inap(){
+	public function Administrasi(){
 		$this->db = new DBClass();
 	}
 
-	public function readAllr_inap(){
-		$query = "Select * from r_inap";
+	public function readAllAdministrasi(){
+		$query = "Select * from keadministrasian";
 		return $this->db->getRows($query);	
 	}
-	public function readr_inap($id){
-		$query = "Select * from r_inap where id_RInap='".$id."'";
+
+	public function readAdministrasi($id){
+		$query = "Select * from keadministrasian where id_keadministrasian='".$id."'";
 		return $this->db->getRows($query);		
 	}
 
-	public function creater_inap($id_RInap, $nama, $foto, $deskripsi){
-		$query = "Insert into r_inap (id_RInap, nama, gambar, deskripsi)
-			values('$id_RInap', '$nama', '$foto', '$deskripsi')";
+	public function createAdministrasi($id_keadministrasian, $judul, $upload, $deskripsi){
+		$query = "Insert into keadministrasian (id_keadministrasian, judul, upload, deskripsi,tgl_input)
+			values('$id_keadministrasian', '$judul', '$judul', '$deskripsi', 'date('Y-m-d')')";
 		$this->db->putRows($query);	
 	}
-	public function updater_inap($id, $data){
-		$nama = $data['input_nama'];
-		$foto = $data['input_foto'];
-		$deskripsi = $data['input_deskripsi'];
-		$query = "update r_inap set nama='$nama', gambar='$foto', deskripsi='$deskripsi'";
-		$query.= " where id_RInap='$id'";
+	public function updateAdministrasi($id, $data){
+		$judul = $data['input_judul'];
+		$upload=$data['input_upload'];
+		$deskripsi=$data['input_deskripsi'];
+		
+
+		$query = "update keadministrasian set judul='$judul', upload=$upload, deskripsi=$deskripsi, tgl_input=date('Y-m-d')";
+		$query.= " where id_keadministrasian='$id'";
 		$this->db->putRows($query);		
 	}
 
-	public function deleter_inap($id){
-		$sql = "Delete from r_inap Where id_RInap='$id'";
+	public function deleteAdministrasi($id){
+		$sql = "Delete from keadministrasian Where id_keadministrasian='$id'";
 		$this->db->putRows($sql);		
 	}
-
 	
 }
+
+
+?>

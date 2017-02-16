@@ -20,8 +20,8 @@ class kirim_proposal{
 	}
 
 	public function createKirim_proposal($id_proposal, $orma, $no_surat, $judul, $proposal, $deskripsi){
-		$query = "Insert into kirim_proposal (id_proposal, orma, no_surat, judul, proposal, deskripsi)
-			values('$id_proposal', '$orma', '$no_surat', '$judul', '$proposal', '$deskripsi')";
+		$query = "Insert into kirim_proposal (id_proposal, orma, no_surat, judul, proposal, deskripsi, tgl_input)
+			values('$id_proposal', '$orma', '$no_surat', '$judul', '$proposal', '$deskripsi', 'date('Y-m-d')')";
 		$this->db->putRows($query);	
 	}
 	public function updateKirim_proposal($id, $data){
@@ -32,7 +32,7 @@ class kirim_proposal{
 		$deskripsi=$data['input_deskripsi'];
 		
 
-		$query = "update kirim_proposal set orma='$orma', no_surat='$no_surat', judul='$judul', proposal=$proposal, deskripsi=$deskripsi";
+		$query = "update kirim_proposal set orma='$orma', no_surat='$no_surat', judul='$judul', proposal=$proposal, deskripsi=$deskripsi, tgl_input=date('Y-m-d')";
 		$query.= " where id_proposal='$id'";
 		$this->db->putRows($query);		
 	}

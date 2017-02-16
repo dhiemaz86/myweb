@@ -20,8 +20,8 @@ class data_proposal{
 	}
 
 	public function createData_proposal($id_data_proposal, $orma, $no_surat, $judul, $proposal, $deskripsi){
-		$query = "Insert into data_proposal (id_data_proposal, orma, no_surat, judul, proposal, deskripsi)
-			values('$id_data_proposal', '$orma', '$no_surat', '$judul', '$proposal', '$deskripsi')";
+		$query = "Insert into data_proposal (id_data_proposal, orma, no_surat, judul, proposal, deskripsi,tgl_input)
+			values('$id_data_proposal', '$orma', '$no_surat', '$judul', '$proposal', '$deskripsi', 'date('Y-m-d')')";
 		$this->db->putRows($query);	
 	}
 	public function updateData_proposal($id, $data){
@@ -32,7 +32,7 @@ class data_proposal{
 		$deskripsi=$data['input_deskripsi'];
 		
 
-		$query = "update data_proposal set orma='$orma', no_surat='$no_surat', judul='$judul', proposal=$proposal, deskripsi=$deskripsi";
+		$query = "update data_proposal set orma='$orma', no_surat='$no_surat', judul='$judul', proposal=$proposal, deskripsi=$deskripsi, tgl_input=date('Y-m-d')";
 		$query.= " where id_data_proposal='$id'";
 		$this->db->putRows($query);		
 	}

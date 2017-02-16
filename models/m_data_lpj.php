@@ -20,8 +20,8 @@ class data_lpj{
 	}
 
 	public function createData_lpj($id_data_lpj, $orma, $no_surat, $judul, $lpj, $deskripsi){
-		$query = "Insert into data_lpj (id_data_lpj, orma, no_surat, judul, lpj, deskripsi)
-			values('$id_data_lpj', '$orma', '$no_surat', '$judul', '$lpj', '$deskripsi')";
+		$query = "Insert into data_lpj (id_data_lpj, orma, no_surat, judul, lpj, deskripsi,tgl_input)
+			values('$id_data_lpj', '$orma', '$no_surat', '$judul', '$lpj', '$deskripsi', 'date('Y-m-d')')";
 		$this->db->putRows($query);	
 	}
 	public function updateData_lpj($id, $data){
@@ -32,7 +32,7 @@ class data_lpj{
 		$deskripsi=$data['input_deskripsi'];
 		
 
-		$query = "update data_lpj set orma='$orma', no_surat='$no_surat', judul='$judul', lpj=$lpj, deskripsi=$deskripsi";
+		$query = "update data_lpj set orma='$orma', no_surat='$no_surat', judul='$judul', lpj=$lpj, deskripsi=$deskripsi, tgl_input=date('Y-m-d')";
 		$query.= " where id_data_lpj='$id'";
 		$this->db->putRows($query);		
 	}
