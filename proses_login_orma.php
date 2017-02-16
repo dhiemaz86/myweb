@@ -16,7 +16,6 @@
    
   $_SESSION['usernameku'] = $usr;
   $_SESSION['passwordku'] = $psw;
-  
  
   echo"<script language='javascript'>window.location = 'index_orma.php'</script>";
  }else{

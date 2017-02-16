@@ -22,7 +22,7 @@ class profil{
 	}
 
 	public function updateProfil($id, $data){
-		$nama_orma = $data['input_name'];
+		$nama_orma = $data['input_orma'];
 		$ketua = $data['input_ketua'];
 		$kesekretariatan = $data['input_kesekretariatan'];
 		$kontak = $data['input_kontak'];

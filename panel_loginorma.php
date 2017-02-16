@@ -1,12 +1,25 @@
 <?php
+
 ob_start();
 if(isset($_SESSION['usernameku']))
     {
         $user = $_SESSION['usernameku'];
+        
         echo "$user";
-?>
 
-<?php
+  include('koneksi.php');
+    $sqlUser = "select * from orma where user='".$_SESSION['usernameku']."'";
+    $orma = mysql_fetch_array(mysql_query($sqlUser));
+    $sql =  "".$orma['id_orma']." ";
+
+
+    
+ ?>
+
+
+
+
+<?php echo "$sql";
 }else{
 echo'
                 <div style="padding-top:10px;">
