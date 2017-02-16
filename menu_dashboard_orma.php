@@ -10,12 +10,12 @@
 		
 	</tr>
 	<tr height="130px">
-		<td><a href="view_profil.php"><img src="data/icon/dokter.png" height="100px"></a></td>
+		<td><a href="view_profil_orma.php"><img src="data/icon/dokter.png" height="100px"></a></td>
 		<td><a href="view_kirim_proposal.php"><img src="data/icon/rinap.png" height="100px"></a></td>
 		<td><a href="view_kirim_lpj.php"><img src="data/icon/rjalan.png" height="100px"></a></td>
 	</tr>
 	<tr height="20px">
-		<td><a href="view_profil.php">PROFIL</a></td>
+		<td><a href="view_profil_orma.php">PROFIL</a></td>
 		<td><a href="view_kirim_proposal.php">KIRIM PROPOSAL</a></td>
 		<td><a href="view_kirim_lpj.php">KIRIM LPJ</a></td>
 	</tr>

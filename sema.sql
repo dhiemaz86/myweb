@@ -109,7 +109,7 @@ CREATE TABLE IF NOT EXISTS `orma` (
   `password` varchar(30) NOT NULL,
   `logo` varchar(255) NOT NULL,
   PRIMARY KEY (`id_orma`)
-  ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=70 ;
+  ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=20 ;
 
 --
 -- Dumping data for table `orma`
@@ -135,7 +135,7 @@ INSERT INTO `orma` (`id_orma`, `user`, `password`, `logo`) VALUES
 (17, 'onegai', 'admin', ''),
 (18, 'kmhd', 'admin', ''),
 (19, 'psht', 'admin', ''),
-(69, 'admin', 'admin', 'LOGOFOSSIL.PNG');
+('', 'admin', 'admin', 'LOGOFOSSIL.PNG');
 
 -- --------------------------------------------------------
 
@@ -174,16 +174,17 @@ CREATE TABLE IF NOT EXISTS `kirim_proposal` (
   `judul` varchar(30) NOT NULL,
   `proposal` varchar(150) NOT NULL,
   `deskripsi` varchar(150) NOT NULL,
+  `tgl_input` date DEFAULT NULL,
    PRIMARY KEY (`id_proposal`),
    KEY `orma` (`orma`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+)  ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
 
 --
 -- Dumping data for table `kirim_proposal`
 --
 
-INSERT INTO `kirim_proposal` (`id_proposal`, `orma`, `no_surat`, `judul`, `proposal`, `deskripsi`) VALUES
-('1', '2', '003/Fossil/A/2017', 'Pengjuan dana', 'proposal.doc', 'proposal untuk mengjukan dana keperluan orma');
+INSERT INTO `kirim_proposal` (`id_proposal`, `orma`, `no_surat`, `judul`, `proposal`, `deskripsi`, `tgl_input`) VALUES
+(0, '2', '003/Fossil/A/2017', 'Pengjuan dana', 'proposal.doc', 'proposal untuk mengjukan dana keperluan orma', '');
 
 -- --------------------------------------------------------
 
@@ -200,16 +201,17 @@ CREATE TABLE IF NOT EXISTS `kirim_lpj` (
   `judul` varchar(30) NOT NULL,
   `lpj` varchar(150) NOT NULL,
   `deskripsi` varchar(150) NOT NULL,
+  `tgl_input` date DEFAULT NULL,
    PRIMARY KEY (`id_lpj`),
    KEY `orma` (`orma`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=0;
 
 --
 -- Dumping data for table `kirim_lpj``
 --
 
-INSERT INTO `kirim_lpj` (`id_lpj`, `orma`, `no_surat`, `judul`, `lpj`, `deskripsi`) VALUES
-('2', '3', '004/Fossil/A/2017', 'Pengjuan dana', 'lpj.doc', 'lpj untuk mengjukan dana keperluan orma');
+INSERT INTO `kirim_lpj` (`id_lpj`, `orma`, `no_surat`, `judul`, `lpj`, `deskripsi`, `tgl_input`) VALUES
+(0, '3', '004/Fossil/A/2017', 'Pengjuan dana', 'lpj.doc', 'lpj untuk mengjukan dana keperluan orma', '');
 
 -- --------------------------------------------------------
 
@@ -224,18 +226,19 @@ CREATE TABLE IF NOT EXISTS `data_proposal` (
   `orma` varchar(30) NOT NULL,
   `no_surat` varchar(30) NOT NULL,
   `judul` varchar(30) NOT NULL,
-  `lpj` varchar(150) NOT NULL,
+  `proposal` varchar(150) NOT NULL,
   `deskripsi` varchar(150) NOT NULL,
+  `tgl_input` date DEFAULT NULL,
    PRIMARY KEY (`id_data_proposal`),
    KEY `orma` (`orma`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
 
 --
 -- Dumping data for table `data_proposal`
 --
 
-INSERT INTO `data_proposal` (`id_data_proposal`, `orma`, `no_surat`, `judul`, `lpj`, `deskripsi`) VALUES
-('2', '3', '004/Fossil/A/2017', 'Pengjuan dana', 'lpj.doc', 'lpj untuk mengjukan dana keperluan orma');
+INSERT INTO `data_proposal` (`id_data_proposal`, `orma`, `no_surat`, `judul`, `proposal`, `deskripsi`, `tgl_input`) VALUES
+(0, '3', '004/Fossil/A/2017', 'Pengjuan dana', 'proposal.doc', 'lpj untuk mengjukan dana keperluan orma','');
 
 -- --------------------------------------------------------
 
@@ -251,16 +254,17 @@ CREATE TABLE IF NOT EXISTS `data_lpj` (
   `judul` varchar(30) NOT NULL,
   `lpj` varchar(150) NOT NULL,
   `deskripsi` varchar(150) NOT NULL,
+  `tgl_input` date DEFAULT NULL,
    PRIMARY KEY (`id_data_lpj`),
    KEY `orma` (`orma`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=0;
 
 --
 -- Dumping data for table `kirim_lpj``
 --
 
-INSERT INTO `data_lpj` (`id_data_lpj`, `orma`, `no_surat`, `judul`, `lpj`, `deskripsi`) VALUES
-('2', '3', '004/Fossil/A/2017', 'Pengjuan dana', 'lpj.doc', 'lpj untuk mengjukan dana keperluan orma');
+INSERT INTO `data_lpj` (`id_data_lpj`, `orma`, `no_surat`, `judul`, `lpj`, `deskripsi`, `tgl_input`) VALUES
+(0, '3', '004/Fossil/A/2017', 'Pengjuan dana', 'lpj.doc', 'lpj untuk mengjukan dana keperluan orma', '');
 
 -- --------------------------------------------------------
 
@@ -272,21 +276,19 @@ INSERT INTO `data_lpj` (`id_data_lpj`, `orma`, `no_surat`, `judul`, `lpj`, `desk
 
 CREATE TABLE IF NOT EXISTS `keadministrasian` (
   `id_keadministrasian` varchar(6) NOT NULL,
-  `orma` varchar(30) NOT NULL,
-  `no_surat` varchar(30) NOT NULL,
   `judul` varchar(30) NOT NULL,
   `upload` varchar(150) DEFAULT NULL,
   `deskripsi` varchar(150) NOT NULL,
-   PRIMARY KEY (`id_keadministrasian`),
-   KEY `orma` (`orma`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `tgl_input` date DEFAULT NULL,
+   PRIMARY KEY (`id_keadministrasian`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=0;
 
 --
 -- Dumping data for table `kirim_lpj``
 --
 
-INSERT INTO `keadministrasian` (`id_keadministrasian`, `orma`, `no_surat`, `judul`, `upload`, `deskripsi`) VALUES
-('1', '3', '004/Fossil/A/2017', 'Pengjuan dana', 'lpj.doc', 'lpj untuk mengjukan dana keperluan orma');
+INSERT INTO `keadministrasian` (`id_keadministrasian`, `judul`, `upload`, `deskripsi`, `tgl_input`) VALUES
+(0, 'Pengjuan dana', 'lpj.doc', 'lpj untuk mengjukan dana keperluan orma', '');
 
 -- --------------------------------------------------------
 
@@ -302,14 +304,14 @@ CREATE TABLE IF NOT EXISTS `keuangan` (
   `sisa` varchar(150) NOT NULL,
    PRIMARY KEY (`id_keuangan`),
    KEY `orma` (`orma`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=0;
 
 --
 -- Dumping data for table `about`
 --
 
 INSERT INTO `keuangan` (`id_keuangan`, `orma`, `dana`, `sisa`) VALUES
-('1', '2', '15.000.000', '12.000.000');
+(0, '2', '15.000.000', '12.000.000');
 
 -- --------------------------------------------------------
 
@@ -324,14 +326,14 @@ CREATE TABLE IF NOT EXISTS `kontak` (
   `jabatan` varchar(30) DEFAULT NULL,
   `kontak` varchar(30) NOT NULL,
    PRIMARY KEY (`id_kontak`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=0;
 
 --
 -- Dumping data for table `kontak`
 --
 
 INSERT INTO `kontak` (`id_kontak`, `nama`, `nim`, `jabatan`, `kontak`) VALUES
-('1', 'Dimas Dwi Nugroho', '14.11.7857', 'ketua', '085868037457');
+(0, 'Dimas Dwi Nugroho', '14.11.7857', 'ketua', '085868037457');
 
 -- --------------------------------------------------------
 
