@@ -10,16 +10,20 @@ if(isset($_SESSION['usernameku']))
   include('koneksi.php');
     $sqlUser = "select * from orma where user='".$_SESSION['usernameku']."'";
     $orma = mysql_fetch_array(mysql_query($sqlUser));
-    $sql =  "".$orma['id_orma']." ";
+    $id_orma =  "".$orma['id_orma']." ";
+    $logo   =  "".$orma['logo']." ";
 
-
+    echo"$id_orma";
+echo"
+    <img border=4 style='height:250px;' src='data/logo_orma/$logo'>
+"
     
  ?>
 
 
 
 
-<?php echo "$sql";
+<?php 
 }else{
 echo'
                 <div style="padding-top:10px;">
