@@ -19,6 +19,19 @@ class kirim_proposal{
 		return $this->db->getRows($query);		
 	}
 
+	public function baca(){
+		 $user = $_SESSION['usernameku'];
+		 $sqlUser = "select * from orma where user='$user'";
+ 		 $orma = mysql_fetch_array(mysql_query($sqlUser));
+   	 	 $id   =  "".$orma['id_orma']." ";
+
+		 $quweri = "select * from kirim_proposal kp join  status s on
+			kp.status = s.id_status join orma o on kp.id_orma = o.id_orma where kp.id_orma='".$id."'";
+ 		 //$orma = mysql_fetch_array(mysql_query($quweri));	
+
+ 		 return $this->db->getRows($quweri);		
+	}
+
 	public function createKirim_proposal($id_proposal, $orma, $no_surat, $judul, $proposal, $deskripsi){
 		$query = "Insert into kirim_proposal (id_proposal, orma, no_surat, judul, proposal, deskripsi, tgl_input)
 			values('$id_proposal', '$orma', '$no_surat', '$judul', '$proposal', '$deskripsi', 'date('Y-m-d')')";

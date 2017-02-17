@@ -1,3 +1,4 @@
+
 <?php
 
 
@@ -16,10 +17,24 @@ class profil{
 		return $this->db->getRows($query);	
 	}
 
+
 	public function readProfil($id){
-		$query = "Select * from profil".$id;
+		$query = "Select * from profil where id_profil=".$id;
 		return $this->db->getRows($query);		
 	}
+
+		public function baca(){
+		 $user = $_SESSION['usernameku'];
+		 $sqlUser = "select * from orma where user='$user'";
+ 		 $orma = mysql_fetch_array(mysql_query($sqlUser));
+   	 	 $id   =  "".$orma['id_orma']." ";
+
+		 $quweri = "select * from profil where orma='".$id."'";
+ 		 //$orma = mysql_fetch_array(mysql_query($quweri));	
+
+ 		 return $this->db->getRows($quweri);		
+	}
+
 
 	public function updateProfil($id, $data){
 		$nama_orma = $data['input_orma'];
