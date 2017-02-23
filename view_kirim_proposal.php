@@ -8,6 +8,12 @@ include('header.php');
 include('koneksi.php');
 
 ?>
+<!--
+<head>
+  <link rel="stylesheet" type="text/css" href="data/icon/home.css">
+</head>
+-->
+
 <body class="senatbaru">
 
 <div class="container">
@@ -59,7 +65,7 @@ include('koneksi.php');
 <td></td>
   </tr>
 </table>
-                            <?php include("menu_orma_kiri.php");?>
+                          <?php include("menu_orma_kiri.php");?>
                         </div>
                 </div>            
 

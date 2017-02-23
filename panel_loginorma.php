@@ -1,3 +1,8 @@
+
+
+<?php
+include('header.php');
+?>
 <?php
 
 ob_start();
@@ -5,18 +10,48 @@ if(isset($_SESSION['usernameku']))
     {
         $user = $_SESSION['usernameku'];
         
-        echo "$user";
-
+     
   include('koneksi.php');
     $sqlUser = "select * from orma where user='".$_SESSION['usernameku']."'";
     $orma = mysql_fetch_array(mysql_query($sqlUser));
     $id_orma =  "".$orma['id_orma']." ";
     $logo   =  "".$orma['logo']." ";
+    $user = $_SESSION['usernameku'];
 
-    echo"$id_orma";
+
+
 echo"
-    <img border=4 style='height:250px;' src='data/logo_orma/$logo'>
-"
+   <img id='profile-img' class='profile-img-card' style='width: 65%; height: 65%;'' src='data/logo_orma/$logo' />
+";
+echo'        
+ <div>
+          
+
+
+
+<form>
+         <center>';
+  echo "<h4><p class='text-uppercase'><strong> $user <strong></p></h4> <br>";
+
+echo'
+                <a type="button" class="btn btn-primary" style="width:45%;"" href="index_orma.php">Dashboard</a>
+               <a type="button" class="btn btn-primary" style="width:45%;"" href="logout_orma.php">Logout</a>
+         </center>
+              
+               
+</form> 
+
+          
+
+        </div>
+ 
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>';
+
+
+
+
+
     
  ?>
 

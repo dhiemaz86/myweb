@@ -29,7 +29,7 @@ include('koneksi.php');
                   <!--   image slider        -->        
             <div >
                 <?php
-                         include('menu.php');
+                         include('panel_menu.php');
                     ?>       
 
                         <div class="col-md-12" style="background-color: white;">
@@ -50,7 +50,7 @@ include('koneksi.php');
 
                 <div style="padding-right: 10px;">
                         
-                          <?php include("loginorma.php");?>
+                          <?php include("panel_loginorma.php");?>
                         <div style="border-bottom: 10px; border-color: red;">
 
  <table align="center" width="1900px" border="1px" bgcolor="red" valign="middle">
@@ -70,7 +70,7 @@ include('koneksi.php');
 
 
                               <div class="col-md-9" style="background-color: none">
-                  <div><?php include('menu_orma.php');?></div>
+                  <div><?php include('isi_data_lpj.php');?></div>
                               </div>
   <!-- Bagian KANAN-->     
 

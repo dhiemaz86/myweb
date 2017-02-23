@@ -16,8 +16,8 @@ class keuangan{
 		return $this->db->getRows($query);	
 	}
 
-	public function readKeuangan($id){
-		$query = "Select * from keuangan where id_keuangan=".$id;
+	public function readKeuangan(){
+		$query = "Select * from keuangan k join orma o on k.orma=o.id_orma order by orma asc";
 		return $this->db->getRows($query);		
 	}
 

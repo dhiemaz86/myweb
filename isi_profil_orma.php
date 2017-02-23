@@ -27,7 +27,7 @@
 	<h1>Edit Data Profil</h1>
 	<form action="action_upd_profil.php" method="post" enctype="multipart/form-data">
 	Nama Orma :<br />
-	<input type="text" name="input_orma" value="<?php echo $dt['nama_orma'] ?>" readonly="true"><br />
+	<input type="text" name="input_orma" value="<?php echo $dt['nama_orma'] ?>" ><br />
 	Nama Ketua :<br />
 	<input type="text" name="input_ketua" value="<?php echo $dt['ketua'] ?>"><br />
 	Kesekretariatan :<br />

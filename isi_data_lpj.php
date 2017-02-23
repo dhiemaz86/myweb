@@ -1,16 +1,16 @@
 <?php
 	
 	require_once('lib/DBClass.php');
-	require_once('models/m_kirim_lpj.php');
-	$kirim_lpj = new kirim_lpj();
-	$data=$kirim_lpj->baca();
+	require_once('models/m_data_lpj.php');
+	$data_lpj = new data_lpj();
+	$data=$data_lpj->baca();
 
 	//print '<pre>';
 	//print_r($data);
 	//print '</pre>';
 	
 ?>
-<a href="view_add_kirim_lpj.php">Kirim LPJ</a><br>
+
 
 <table id="table" class="table table-striped table-bordered" width="100%" cellspacing="0">
 <thead>
@@ -21,7 +21,6 @@
 		<th>LPJ</th>
 		<th>Deskripsi</th>
 		<th>Masuk</th>
-		<th>Status</th>
 	
 
 	</tr>
@@ -35,7 +34,6 @@
 		<td><?php echo $a['lpj']?></td>
 		<td><?php echo $a['deskripsi']?></td>
 		<td><?php echo $a['tgl_input']?></td>
-		<td><?php echo $a['status']?></td>
 		<td><a href="view_detail_dokter.php?a=<?php echo $a['id_dokter'] ?>">
 		detail
 		</a> |

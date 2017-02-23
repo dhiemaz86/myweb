@@ -69,8 +69,9 @@ include('koneksi.php');
                             </div> <!-- end of col-md-3 -->
 
 
+
                               <div class="col-md-9" style="background-color: none">
-                  <div><?php include('isi_data_proposal.php');?></div>
+                  <div><?php include('isi_kontak.php');?></div>
                               </div>
   <!-- Bagian KANAN-->     
 

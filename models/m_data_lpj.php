@@ -19,6 +19,18 @@ class data_lpj{
 		return $this->db->getRows($query);		
 	}
 
+	public function baca(){
+		 $user = $_SESSION['usernameku'];
+		 $sqlUser = "select * from orma where user='$user'";
+ 		 $orma = mysql_fetch_array(mysql_query($sqlUser));
+   	 	 $id   =  "".$orma['id_orma']." ";
+
+		 $quweri = "select * from data_lpj dp join orma o on dp.orma = o.id_orma where dp.orma='".$id."'";
+ 		 //$orma = mysql_fetch_array(mysql_query($quweri));	
+
+ 		 return $this->db->getRows($quweri);		
+	}
+
 	public function createData_lpj($id_data_lpj, $orma, $no_surat, $judul, $lpj, $deskripsi){
 		$query = "Insert into data_lpj (id_data_lpj, orma, no_surat, judul, lpj, deskripsi,tgl_input)
 			values('$id_data_lpj', '$orma', '$no_surat', '$judul', '$lpj', '$deskripsi', 'date('Y-m-d')')";

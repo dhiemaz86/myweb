@@ -19,6 +19,19 @@ class kirim_lpj{
 		return $this->db->getRows($query);		
 	}
 
+	public function baca(){
+		 $user = $_SESSION['usernameku'];
+		 $sqlUser = "select * from orma where user='$user'";
+ 		 $orma = mysql_fetch_array(mysql_query($sqlUser));
+   	 	 $id   =  "".$orma['id_orma']." ";
+
+		 $quweri = "select * from kirim_lpj kp join  status s on
+			kp.status = s.id_status join orma o on kp.id_orma = o.id_orma where kp.id_orma='".$id."'";
+ 		 //$orma = mysql_fetch_array(mysql_query($quweri));	
+
+ 		 return $this->db->getRows($quweri);		
+	}
+
 	public function createKirim_lpj($id_lpj, $orma, $no_surat, $judul, $lpj, $deskripsi){
 		$query = "Insert into kirim_lpj (id_lpj, orma, no_surat, judul, lpj, deskripsi, tgl_input)
 			values('$id_lpj', '$orma', '$no_surat', '$judul', '$lpj', '$deskripsi', 'date('Y-m-d')')";

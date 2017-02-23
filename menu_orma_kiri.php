@@ -13,7 +13,7 @@
    <li><img style="height: 50px; width: 50px;" src="data/logo/logoputih.png"><a href='view_data_proposal.php'><span>Data Proposal</span></a></li>
    <li><img style="height: 50px; width: 50px;" src="data/logo/logoputih.png"><a href='view_data_lpj.php'><span>Data LPJ</span></a></li> 
    <li><img style="height: 50px; width: 50px;" src="data/logo/logoputih.png"><a href='#'><span>Keadministrasian</span></a></li>
-   <li><img style="height: 50px; width: 50px;" src="data/logo/logoputih.png"><a href='#'><span>Kontak Sema</span></a></li>
+   <li><img style="height: 50px; width: 50px;" src="data/logo/logoputih.png"><a href='view_kontak_sema.php'><span>Kontak Sema</span></a></li>
    <li><img style="height: 50px; width: 50px;" src="data/logo/logoputih.png"><a href='logout_orma.php'><span>Logout</span></a></li>
   
 </ul>

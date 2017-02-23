@@ -19,6 +19,19 @@ class data_proposal{
 		return $this->db->getRows($query);		
 	}
 
+	public function baca(){
+		 $user = $_SESSION['usernameku'];
+		 $sqlUser = "select * from orma where user='$user'";
+ 		 $orma = mysql_fetch_array(mysql_query($sqlUser));
+   	 	 $id   =  "".$orma['id_orma']." ";
+
+		 $quweri = "select * from data_proposal dp join orma o on dp.orma = o.id_orma where dp.orma='".$id."'";
+ 		 //$orma = mysql_fetch_array(mysql_query($quweri));	
+
+ 		 return $this->db->getRows($quweri);		
+	}
+
+
 	public function createData_proposal($id_data_proposal, $orma, $no_surat, $judul, $proposal, $deskripsi){
 		$query = "Insert into data_proposal (id_data_proposal, orma, no_surat, judul, proposal, deskripsi,tgl_input)
 			values('$id_data_proposal', '$orma', '$no_surat', '$judul', '$proposal', '$deskripsi', 'date('Y-m-d')')";
