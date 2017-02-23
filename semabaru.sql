@@ -349,7 +349,7 @@ CREATE TABLE IF NOT EXISTS `status` (
 --
 
 INSERT INTO `status` (`id_status`, `status`) VALUES
-(1, 'Un Read'),
+(0, 'Un Read'),
 (2, 'Revisi'),
 (3, 'Benar');
 
@@ -361,13 +361,13 @@ INSERT INTO `status` (`id_status`, `status`) VALUES
 -- Indexes for table `data_lpj`
 --
 ALTER TABLE `data_lpj`
- ADD PRIMARY KEY (`id_data_lpj`), ADD KEY `orma` (`orma`);
+ ADD KEY `orma` (`orma`);
 
 --
 -- Indexes for table `data_proposal`
 --
 ALTER TABLE `data_proposal`
- ADD PRIMARY KEY (`id_data_proposal`), ADD KEY `orma` (`orma`);
+ ADD KEY `orma` (`orma`);
 
 --
 -- Indexes for table `keadministrasian`
@@ -379,19 +379,19 @@ ALTER TABLE `keadministrasian`
 -- Indexes for table `keuangan`
 --
 ALTER TABLE `keuangan`
- ADD PRIMARY KEY (`id_keuangan`), ADD KEY `orma` (`orma`);
+ ADD KEY `orma` (`orma`);
 
 --
 -- Indexes for table `kirim_lpj`
 --
 ALTER TABLE `kirim_lpj`
- ADD PRIMARY KEY (`id_lpj`), ADD KEY `orma` (`id_orma`);
+ ADD KEY `orma` (`id_orma`);
 
 --
 -- Indexes for table `kirim_proposal`
 --
 ALTER TABLE `kirim_proposal`
- ADD PRIMARY KEY (`id_proposal`), ADD KEY `orma` (`id_orma`);
+ ADD KEY `orma` (`id_orma`);
 
 --
 -- Indexes for table `kontak`

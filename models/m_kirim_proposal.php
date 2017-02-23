@@ -32,11 +32,20 @@ class kirim_proposal{
  		 return $this->db->getRows($quweri);		
 	}
 
-	public function createKirim_proposal($id_proposal, $orma, $no_surat, $judul, $proposal, $deskripsi){
-		$query = "Insert into kirim_proposal (id_proposal, orma, no_surat, judul, proposal, deskripsi, tgl_input)
-			values('$id_proposal', '$orma', '$no_surat', '$judul', '$proposal', '$deskripsi', 'date('Y-m-d')')";
+	public function createKirim_proposal($judul,$no_surat, $proposal, $deskripsi){
+		 $tgl = date('Y-m-d');
+		 $user = $_SESSION['usernameku'];
+		 $sqlUser = "select * from orma where user='$user'";
+ 		 $orma = mysql_fetch_array(mysql_query($sqlUser));
+   	 	 $id   =  "".$orma['id_orma']." ";
+
+		$query = "Insert into kirim_proposal (id_orma, no_surat, judul, proposal, deskripsi, tgl_input)
+			values('$id', '$no_surat', '$judul', '$proposal', '$deskripsi', '$tgl')";
 		$this->db->putRows($query);	
 	}
+
+
+
 	public function updateKirim_proposal($id, $data){
 		$orma = $data['input_orma'];
 		$no_surat = $data['input_no_surat'];
