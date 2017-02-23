@@ -36,16 +36,21 @@ class profil{
 	}
 
 
-	public function updateProfil($id, $data){
-		$nama_orma = $data['input_orma'];
-		$ketua = $data['input_ketua'];
-		$kesekretariatan = $data['input_kesekretariatan'];
-		$kontak = $data['input_kontak'];
-		$deskripsi = $data['input_deskripsi'];
-		$logo = $data['gambar'];	
+	public function updateProfil($data){
+		 $user = $_SESSION['usernameku'];
+		 $sqlUser = "select * from orma where user='$user'";
+ 		 $orma = mysql_fetch_array(mysql_query($sqlUser));
+   	 	 $id   =  "".$orma['id_orma']." ";
 
-		$query = "update about set nama_orma='$nama_orma', ketua='$ketua', kesekretariatan='$kesekretariatan', kontak='$kontak', deskripsi='$deskripsi' ,logo='$logo'";
-		$query.= " where id_profil=$id";
+		$nama_orma = $data['nama_orma'];
+		$ketua = $data['ketua'];
+		$kesekretariatan = $data['kesekretariatan'];
+		$kontak = $data['kontak'];
+		$deskripsi = $data['deskripsi'];
+		$logo = $data['logo'];	
+
+		$query = "update profil set nama_orma='$nama_orma', ketua='$ketua', kesekretariatan='$kesekretariatan', kontak='$kontak', deskripsi='$deskripsi' ,logo='$logo'";
+		$query.= " where id_profil='".$id."'";;
 		$this->db->putRows($query);		
 	}
 

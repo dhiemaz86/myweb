@@ -25,15 +25,15 @@
 
 
 	<h1>Edit Data Profil</h1>
-	<form action="action_upd_profil.php" method="post" enctype="multipart/form-data">
+	<form action="view_update_profil.php" method="post" enctype="multipart/form-data">
 	Nama Orma :<br />
-	<input type="text" name="input_orma" value="<?php echo $dt['nama_orma'] ?>" ><br />
+	<input type="text" name="in_orma" value="<?php echo $dt['nama_orma'] ?>" ><br />
 	Nama Ketua :<br />
-	<input type="text" name="input_ketua" value="<?php echo $dt['ketua'] ?>"><br />
+	<input type="text" name="in_ketua" value="<?php echo $dt['ketua'] ?>"><br />
 	Kesekretariatan :<br />
-	<input type="text" name="input_kesekretariatan" value="<?php echo $dt['kesekretariatan'] ?>"><br />
+	<input type="text" name="in_kesekretariatan" value="<?php echo $dt['kesekretariatan'] ?>"><br />
 	Kontak :<br />
-	<input type="text" name="input_kontak" value="<?php echo $dt['kontak'] ?>"><br />
+	<input type="text" name="in_kontak" value="<?php echo $dt['kontak'] ?>"><br />
 	Deskripsi :<br />
 	<input type="text" name="in_deskripsi" value="<?php echo $dt['deskripsi'] ?>"><br />
 	
