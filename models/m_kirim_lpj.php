@@ -32,11 +32,18 @@ class kirim_lpj{
  		 return $this->db->getRows($quweri);		
 	}
 
-	public function createKirim_lpj($id_lpj, $orma, $no_surat, $judul, $lpj, $deskripsi){
-		$query = "Insert into kirim_lpj (id_lpj, orma, no_surat, judul, lpj, deskripsi, tgl_input)
-			values('$id_lpj', '$orma', '$no_surat', '$judul', '$lpj', '$deskripsi', 'date('Y-m-d')')";
+		public function createKirim_lpj($judul,$no_surat, $lpj, $deskripsi){
+		 $tgl = date('Y-m-d');
+		 $user = $_SESSION['usernameku'];
+		 $sqlUser = "select * from orma where user='$user'";
+ 		 $orma = mysql_fetch_array(mysql_query($sqlUser));
+   	 	 $id   =  "".$orma['id_orma']." ";
+
+		$query = "Insert into kirim_lpj (id_orma, no_surat, judul, lpj, deskripsi, tgl_input)
+			values('$id', '$no_surat', '$judul', '$lpj', '$deskripsi', '$tgl')";
 		$this->db->putRows($query);	
 	}
+
 	public function updateKirim_lpj($id, $data){
 		$orma = $data['input_orma'];
 		$no_surat = $data['input_no_surat'];

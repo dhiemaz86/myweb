@@ -10,7 +10,7 @@
 	//print '</pre>';
 	
 ?>
-<a href="view_add_kirim_lpj.php">Kirim LPJ</a><br>
+<a href="view_add_kirimlpj.php">Kirim LPJ</a><br>
 
 <table id="table" class="table table-striped table-bordered" width="100%" cellspacing="0">
 <thead>

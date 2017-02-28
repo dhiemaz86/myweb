@@ -39,8 +39,8 @@ class kirim_proposal{
  		 $orma = mysql_fetch_array(mysql_query($sqlUser));
    	 	 $id   =  "".$orma['id_orma']." ";
 
-		$query = "Insert into kirim_proposal (id_orma, no_surat, judul, proposal, deskripsi, tgl_input)
-			values('$id', '$no_surat', '$judul', '$proposal', '$deskripsi', '$tgl')";
+		$query = "Insert into kirim_proposal (id_proposal, id_orma, no_surat, judul, proposal, deskripsi, tgl_input)
+			values('', '$id', '$no_surat', '$judul', '$proposal', '$deskripsi', '$tgl')";
 		$this->db->putRows($query);	
 	}
 

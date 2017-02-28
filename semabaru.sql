@@ -95,7 +95,7 @@ CREATE TABLE IF NOT EXISTS `data_lpj` (
 --
 
 INSERT INTO `data_lpj` (`id_data_lpj`, `orma`, `no_surat`, `judul`, `lpj`, `deskripsi`, `tgl_input`) VALUES
-('0', '3', '004/Fossil/A/2017', 'Pengjuan dana', 'lpj.doc', 'lpj untuk mengjukan dana keperluan orma', '0000-00-00');
+(0, '3', '004/Fossil/A/2017', 'Pengjuan dana', 'lpj.doc', 'lpj untuk mengjukan dana keperluan orma', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -118,7 +118,7 @@ CREATE TABLE IF NOT EXISTS `data_proposal` (
 --
 
 INSERT INTO `data_proposal` (`id_data_proposal`, `orma`, `no_surat`, `judul`, `proposal`, `deskripsi`, `tgl_input`) VALUES
-('0', '3', '004/Fossil/A/2017', 'Pengjuan dana', 'proposal.doc', 'lpj untuk mengjukan dana keperluan orma', '0000-00-00');
+(0, '3', '004/Fossil/A/2017', 'Pengjuan dana', 'proposal.doc', 'lpj untuk mengjukan dana keperluan orma', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -161,7 +161,7 @@ CREATE TABLE IF NOT EXISTS `keadministrasian` (
 --
 
 INSERT INTO `keadministrasian` (`id_keadministrasian`, `judul`, `upload`, `deskripsi`, `tgl_input`) VALUES
-('0', 'Pengjuan dana', 'lpj.doc', 'lpj untuk mengjukan dana keperluan orma', '0000-00-00');
+(0, 'Pengjuan dana', 'lpj.doc', 'lpj untuk mengjukan dana keperluan orma', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -181,7 +181,7 @@ CREATE TABLE IF NOT EXISTS `keuangan` (
 --
 
 INSERT INTO `keuangan` (`id_keuangan`, `orma`, `dana`, `sisa`) VALUES
-('0', 2, '15.000.000', '12.000.000');
+(0, 2, '15.000.000', '12.000.000');
 
 -- --------------------------------------------------------
 
@@ -205,7 +205,7 @@ CREATE TABLE IF NOT EXISTS `kirim_lpj` (
 --
 
 INSERT INTO `kirim_lpj` (`id_lpj`, `id_orma`, `no_surat`, `judul`, `lpj`, `deskripsi`, `tgl_input`, `status`) VALUES
-('0', '3', '004/Fossil/A/2017', 'Pengjuan dana', 'lpj.doc', 'lpj untuk mengjukan dana keperluan orma', '0000-00-00', '2');
+(0, '3', '004/Fossil/A/2017', 'Pengjuan dana', 'lpj.doc', 'lpj untuk mengjukan dana keperluan orma', '0000-00-00', '2');
 
 -- --------------------------------------------------------
 
@@ -229,7 +229,7 @@ CREATE TABLE IF NOT EXISTS `kirim_proposal` (
 --
 
 INSERT INTO `kirim_proposal` (`id_proposal`, `id_orma`, `no_surat`, `judul`, `proposal`, `deskripsi`, `tgl_input`, `status`) VALUES
-('0', 16, '003/Fossil/A/2017', 'Pengjuan dana', 'proposal.doc', 'proposal untuk mengjukan dana keperluan orma', '0000-00-00', 3);
+(0, 16, '003/Fossil/A/2017', 'Pengjuan dana', 'proposal.doc', 'proposal untuk mengjukan dana keperluan orma', '0000-00-00', 3);
 
 -- --------------------------------------------------------
 
