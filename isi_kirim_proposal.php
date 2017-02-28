@@ -2,6 +2,7 @@
 	
 	require_once('lib/DBClass.php');
 	require_once('models/m_kirim_proposal.php');
+
 	$kirim_proposal = new kirim_proposal();
 	$data=$kirim_proposal->baca();
 
@@ -39,7 +40,7 @@
 		<td><a href="view_detail_dokter.php?a=<?php echo $a['id_dokter'] ?>">
 		detail
 		</a> |
-		<a href="view_update_dokter.php?a=<?php echo $a['id_dokter'] ?>">
+		<a href="view_edit_kirimproposal.php?a=<?php echo $a['id_proposal'] ?>">
 		Edit
 		</a> |
 		<a href="view_delete_dokter.php?a=<?php echo $a['id_dokter'] ?>">

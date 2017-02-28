@@ -1,11 +1,12 @@
 <?php
 	require_once('lib/DBClass.php');
-	require_once('models/m_kirim_lpj.php');
+	require_once('models/m_data_lpj.php');
 
-	$user = $_SESSION['usernameku'];	
+
+ 	$user = $_SESSION['usernameku'];		
 	if(isset($_POST['kirim'])){	
-	$kirim_lpj = new kirim_lpj();
-	
+	$kirim_lpj = new Data_lpj();
+ 
 
 	  $ekstensi_diperbolehkan = array('doc','docx');
       $lpj = $_FILES['file']['name'];
@@ -19,17 +20,17 @@
 		$deskripsi = $_POST['in_deskripsi'];
 		
 
-
 if (empty($lpj)) {
 		echo'LPJ kosong <br>';
   }
 	else{
 
-
 	if(in_array($ekstensi, $ekstensi_diperbolehkan) === true){
-        if($ukuran < 5044070){      
-          move_uploaded_file($file_tmp, 'ARSIP/LPJ/lpj_masuk/'.$user.'/'.$lpj);
-          $query = mysql_query("INSERT INTO kirim_lpj VALUES(NULL, '$lpj')");
+        if($ukuran < 5044070){ 
+
+
+          move_uploaded_file($file_tmp, 'ARSIP/LPJ/data_lpj/'.$user.'/'.$lpj);
+          $query = mysql_query("INSERT INTO data_lpj VALUES(NULL, '$lpj')");
           
         }else{
           echo 'UKURAN FILE TERLALU BESAR';
@@ -45,12 +46,12 @@ if (empty($lpj)) {
 
 	
 
-		$tambah = $kirim_lpj->createKirim_lpj($judul, $no_surat, $lpj, $deskripsi);
+		$tambah = $kirim_lpj->createData_lpj($judul, $no_surat, $lpj, $deskripsi);
 		echo "LPJ Berhasil di Kirim!<br/><br />";
 	}
 ?>
 <h1>Kirim LPJ</h1>
-<form action="view_add_kirimlpj.php" method="post"  enctype="multipart/form-data">
+<form action="view_add_datalpj.php" method="post"  enctype="multipart/form-data">
 	Judul:<br/>
 	<input type="text" name="in_judul"><br/>
 	No Surat:<br/>

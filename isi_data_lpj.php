@@ -10,7 +10,7 @@
 	//print '</pre>';
 	
 ?>
-
+<a href="view_add_datalpj.php">Tambah LPJ baru</a><br>
 
 <table id="table" class="table table-striped table-bordered" width="100%" cellspacing="0">
 <thead>

@@ -1,15 +1,16 @@
 <?php
 	require_once('lib/DBClass.php');
-	require_once('models/m_kirim_lpj.php');
+	require_once('models/m_data_proposal.php');
 
-	$user = $_SESSION['usernameku'];	
+
+	$user = $_SESSION['usernameku'];
 	if(isset($_POST['kirim'])){	
-	$kirim_lpj = new kirim_lpj();
+	$kirim_proposal = new data_proposal();
 	
 
 	  $ekstensi_diperbolehkan = array('doc','docx');
-      $lpj = $_FILES['file']['name'];
-      $x = explode('.', $lpj);
+      $proposal = $_FILES['file']['name'];
+      $x = explode('.', $proposal);
       $ekstensi = strtolower(end($x));
       $ukuran = $_FILES['file']['size'];
       $file_tmp = $_FILES['file']['tmp_name'];
@@ -20,16 +21,16 @@
 		
 
 
-if (empty($lpj)) {
-		echo'LPJ kosong <br>';
+if (empty($proposal)) {
+		echo'Proposal kosong <br>';
   }
 	else{
 
 
 	if(in_array($ekstensi, $ekstensi_diperbolehkan) === true){
         if($ukuran < 5044070){      
-          move_uploaded_file($file_tmp, 'ARSIP/LPJ/lpj_masuk/'.$user.'/'.$lpj);
-          $query = mysql_query("INSERT INTO kirim_lpj VALUES(NULL, '$lpj')");
+          move_uploaded_file($file_tmp, 'ARSIP/PROPOSAL/data_proposal/'.$user.'/'.$proposal);
+          $query = mysql_query("INSERT INTO data_proposal VALUES(NULL, '$proposal')");
           
         }else{
           echo 'UKURAN FILE TERLALU BESAR';
@@ -40,22 +41,19 @@ if (empty($lpj)) {
   }
 	
 
-
-
-
 	
 
-		$tambah = $kirim_lpj->createKirim_lpj($judul, $no_surat, $lpj, $deskripsi);
-		echo "LPJ Berhasil di Kirim!<br/><br />";
+		$tambah = $kirim_proposal->createData_proposal($judul, $no_surat, $proposal, $deskripsi);
+		echo "Proposal Berhasil di Kirim!<br/><br />";
 	}
 ?>
-<h1>Kirim LPJ</h1>
-<form action="view_add_kirimlpj.php" method="post"  enctype="multipart/form-data">
+<h1>Kirim Proposal</h1>
+<form action="view_add_dataproposal.php" method="post"  enctype="multipart/form-data">
 	Judul:<br/>
 	<input type="text" name="in_judul"><br/>
 	No Surat:<br/>
 	<input type="text" name="in_nomor"><br/>
-	LPJ:<br/>
+	Proposal:<br/>
 	<input type="file" name="file"><br />
 	Deskripsi:<br/>
 	<input type="text" name="in_deskripsi"><br/>

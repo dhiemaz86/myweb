@@ -362,12 +362,14 @@ INSERT INTO `status` (`id_status`, `status`) VALUES
 --
 ALTER TABLE `data_lpj`
  ADD KEY `orma` (`orma`);
+ALTER TABLE `data_lpj` MODIFY COLUMN `id_data_lpj` INT NOT NULL AUTO_INCREMENT KEY;
 
 --
 -- Indexes for table `data_proposal`
 --
 ALTER TABLE `data_proposal`
  ADD KEY `orma` (`orma`);
+ALTER TABLE `data_proposal` MODIFY COLUMN `id_data_proposal` INT NOT NULL AUTO_INCREMENT KEY;
 
 --
 -- Indexes for table `keadministrasian`
@@ -386,12 +388,14 @@ ALTER TABLE `keuangan`
 --
 ALTER TABLE `kirim_lpj`
  ADD KEY `orma` (`id_orma`);
+ALTER TABLE `kirim_lpj` MODIFY COLUMN `id_lpj` INT NOT NULL AUTO_INCREMENT KEY;
 
 --
 -- Indexes for table `kirim_proposal`
 --
 ALTER TABLE `kirim_proposal`
  ADD KEY `orma` (`id_orma`);
+ALTER TABLE `kirim_proposal` MODIFY COLUMN `id_proposal` INT NOT NULL AUTO_INCREMENT KEY;
 
 --
 -- Indexes for table `kontak`

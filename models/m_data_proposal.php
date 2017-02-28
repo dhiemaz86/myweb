@@ -32,11 +32,25 @@ class data_proposal{
 	}
 
 
-	public function createData_proposal($id_data_proposal, $orma, $no_surat, $judul, $proposal, $deskripsi){
-		$query = "Insert into data_proposal (id_data_proposal, orma, no_surat, judul, proposal, deskripsi,tgl_input)
-			values('$id_data_proposal', '$orma', '$no_surat', '$judul', '$proposal', '$deskripsi', 'date('Y-m-d')')";
+//	public function createData_proposal($id_data_proposal, $orma, $no_surat, $judul, $proposal, $deskripsi){
+//		$query = "Insert into data_proposal (id_data_proposal, orma, no_surat, judul, proposal, deskripsi,tgl_input)
+//			values('$id_data_proposal', '$orma', '$no_surat', '$judul', '$proposal', '$deskripsi', 'date('Y-m-d')')";
+//		$this->db->putRows($query);	
+//	}
+
+		public function createData_proposal($judul,$no_surat, $proposal, $deskripsi){
+		 $tgl = date('Y-m-d');
+		 $user = $_SESSION['usernameku'];
+		 $sqlUser = "select * from orma where user='$user'";
+ 		 $orma = mysql_fetch_array(mysql_query($sqlUser));
+   	 	 $id   =  "".$orma['id_orma']." ";
+
+		$query = "Insert into data_proposal (id_data_proposal, orma, no_surat, judul, proposal, deskripsi, tgl_input)
+			values('', '$id', '$no_surat', '$judul', '$proposal', '$deskripsi', '$tgl')";
 		$this->db->putRows($query);	
 	}
+
+
 	public function updateData_proposal($id, $data){
 		$orma = $data['input_orma'];
 		$no_surat = $data['input_no_surat'];
